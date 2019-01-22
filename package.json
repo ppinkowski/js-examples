@@ -1,0 +1,27 @@
+{
+  "name": "js-examples",
+  "version": "1.0.0",
+  "description": "Javascript example snippets for grad week",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppinkowski/js-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppinkowski/js-examples/issues"
+  },
+  "homepage": "https://github.com/ppinkowski/js-examples#readme",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+  }
+}
