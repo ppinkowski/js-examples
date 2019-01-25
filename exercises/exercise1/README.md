@@ -16,4 +16,6 @@ Search beer by name from the brewdog API. Display the results grouped by first b
 
 ## Starting the Client Server
 
+Run `npm install` to install the required dependencies if you haven't already done so
+
 Run `npm run example` to start the client server. The app will be available on http://localhost:5000

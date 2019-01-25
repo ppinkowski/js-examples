@@ -47,4 +47,6 @@ A `sendToAllClients(message)` function is available which will broadcast the giv
 
 ## Starting the Servers
 
+Run `npm install` to install the required dependencies if you haven't already done so
+
 Run `npm run example2` to start the client and server. The app will be available on http://localhost:5000
