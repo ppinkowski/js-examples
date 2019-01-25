@@ -44,3 +44,7 @@ To commnunicate with the server, the following methods are available:
 The server (in `server.js`) has a message handler setup to receive messages from the client. You must decide what to do with the message.
 
 A `sendToAllClients(message)` function is available which will broadcast the given message to all connected clients.
+
+## Starting the Servers
+
+Run `npm run example2` to start the client and server. The app will be available on http://localhost:5000

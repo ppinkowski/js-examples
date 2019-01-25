@@ -13,3 +13,7 @@ Search beer by name from the brewdog API. Display the results grouped by first b
   Creates and returns and entry to be added to a group
 - `clearGroups()`  
   Clears/removes the results groups
+
+## Starting the Client Server
+
+Run `npm run example` to start the client server. The app will be available on http://localhost:5000
