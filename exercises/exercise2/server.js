@@ -11,7 +11,6 @@ const sendToAllClients = message =>
 
 app.ws('/update', ws => {
   ws.on('message', message => {
-    sendToAllClients(message);
     // do something with message
   });
 });
