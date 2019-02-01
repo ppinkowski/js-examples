@@ -22,4 +22,4 @@ The following functions are available for you to use from the window scope, and 
 
 Run `npm install` to install the required dependencies if you haven't already done so
 
-Run `npm run exercise1` to start the client server. The app will be available on http://localhost:5000
+Run `npm run exercise-solution1` to start the client server. The app will be available on http://localhost:5000

@@ -51,4 +51,4 @@ A `sendToAllClients(message)` function is available which will broadcast the giv
 
 Run `npm install` to install the required dependencies if you haven't already done so
 
-Run `npm run exercise2` to start the client and server. The app will be available on http://localhost:5000
+Run `npm run exercise-solution2` to start the client and server. The app will be available on http://localhost:5000

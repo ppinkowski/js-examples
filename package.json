@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "es6": "babel-node es6-modules/run.js",
-    "example1": "serve exercises/exercise1",
-    "example2": "concurrently \"node exercises/exercise2/server.js\" \"serve exercises/exercise2\""
+    "exercise1": "serve exercises/exercise1",
+    "exercise2": "concurrently \"node exercises/exercise2/server.js\" \"serve exercises/exercise2\"",
+    "exercise-solution1": "serve exercise-solutions/exercise1",
+    "exercise-solution2": "concurrently \"node exercise-solutions/exercise2/server.js\" \"serve exercise-solutions/exercise2\""
   },
   "repository": {
     "type": "git",
