@@ -8,16 +8,18 @@ const websockets = expressWss.getWss('/update');
 const sendToAllClients = message =>
   websockets.clients.forEach(c => c.send(message));
 
-websockets.on('connection', client => {
-  // do something with client
-});
-
+// keep a message history
 const history = [];
+
+// when each new client connects, send them the history of all messages up to this point
+// so they can catch up
+websockets.on('connection', client => history.forEach(m => client.send(m)));
 
 app.ws('/update', ws => {
   ws.on('message', message => {
     history.push(message);
-    // do something with message
+    // broadcast the message to all the clients
+    sendToAllClients(message);
   });
 });
 

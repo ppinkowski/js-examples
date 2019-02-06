@@ -2,7 +2,7 @@
 
 Given a canvas control and a basic server setup, create a shared canvas, so that multiple people can simultaneously draw on the same instance.
 
-Add your solution code to `exercise2.js`
+Add your solution client code to `exercise2.js`
 
 ## Client
 
@@ -41,11 +41,7 @@ To commnunicate with the server, the following methods are available in global s
 - `addServerMessageHandler(handler)`  
   Adds a handler to recieve messages from the server. The handler callback function should take one argument, which will be the message recieved from the server
 
-## Server
-
-The server (in `server.js`) has a message handler setup to receive messages from the client. You must decide what to do with the message.
-
-A `sendToAllClients(message)` function is available which will broadcast the given message to all connected clients.
+The server will broadcast each message it receives to all connected clients.
 
 ## Starting the Servers
 
