@@ -1,7 +1,9 @@
 const onSearch = async e => {
   // stop the default form action
   e.preventDefault();
+  clearGroups();
 
+  // pull out search text from the search input box
   const searchTerm = document.getElementById('searchText').value;
 
   // TODO: fetch and display results
