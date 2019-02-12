@@ -1,6 +1,26 @@
 # Exercise 1
 
-Search beer by name by `fetch()`ing from the brewdog API. Display the results grouped by first brewed year and sorted by name within each group. For each group title, display the year brewed, the total volume for the group, and the max IBU for the beers in that group.
+Implement a beer search tool by completing the subtasks below. Add your solution code to `exercise1.js`.
+
+Run `npm install` to install the required dependencies if you haven't already done so.
+
+Run `npm run exercise1` to start the client server. The app will be available on http://localhost:5000
+
+## Subtasks
+
+1. Fetch results from api. Call `fetch()` to the https://api.punkapi.com/v2/beers?beer_name=\<insert search term here\> endpoint. Log the results with `console.log()`. Hint: Look at the async/await example in example number 13 (`examples/13-async-await.js`).
+2. Create a function to extract the brewed year from a single beer.
+3. Using the function created above, group the results by the first brewed year and sort by name ascending within each group (see the reference links below).
+4. For each year group, create a result group with the `addGroup()` function. For each beer within the year group, you should create an array of display entries with the `createEntry()` function (see the available functions below for full details). At this point you should be able to see the results on the screen.
+
+### Additional Tasks
+
+1. Create a function to calculate the total volume within each group, and add this to the header for each group.
+2. Create a function to calculate the max [IBU](https://beerconnoisseur.com/articles/whats-meaning-ibu) within each group, and add this to the header for each group.
+
+## API
+
+You will be using the following API:
 
 - The format for searching by name is https://api.punkapi.com/v2/beers?beer_name=punk
 - The API documentation is here: https://punkapi.com/documentation/v2
@@ -30,25 +50,6 @@ An example response is:
 ]
 ```
 
-Add your solution code to `exercise1.js`
-
-## Useful References
-
-- Array Manipulation: https://www.w3schools.com/jsref/jsref_obj_array.asp
-- String Manipulation: https://www.w3schools.com/jsref/jsref_obj_string.asp
-
-## Subtasks
-
-1. Fetch results from api. Call `fetch()` to the https://api.punkapi.com/v2/beers?beer_name=\<insert beer name here\> endpoint. Log the results with `console.log()`. Hint: Look at the async/await example in example number 13 (`examples/13-async-await.js`).
-2. Create a function to extract the brewed year from a single beer (using the `first_brewed` field)
-3. Using the function created above, group the results by the first brewed year.
-4. For each year group, create a result group with the `addGroup()` function. For each beer within the year group, you should create an array of display entries with the `createEntry()` function. (See the available functions below for full details). At this point you should be able to see the results on the screen.
-
-### Additional Tasks
-
-1. Create a function to calculate the total volume within each group, and add this to the header for each group.
-2. Create a function to calculate the max IBU within each group, and add this to the header for each group.
-
 ## Available functions:
 
 The following functions are available for you to use from the window scope, and can be called from anywhere:
@@ -60,8 +61,7 @@ The following functions are available for you to use from the window scope, and 
 - `clearGroups()`  
   Clears/removes the results groups
 
-## Starting the Client Server
+## Useful References
 
-Run `npm install` to install the required dependencies if you haven't already done so
-
-Run `npm run exercise-solution1` to start the client server. The app will be available on http://localhost:5000
+- Array Manipulation: https://www.w3schools.com/jsref/jsref_obj_array.asp
+- String Manipulation: https://www.w3schools.com/jsref/jsref_obj_string.asp
