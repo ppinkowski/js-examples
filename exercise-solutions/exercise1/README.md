@@ -4,7 +4,7 @@ Implement a beer search tool by completing the subtasks below. Add your solution
 
 Run `npm install` to install the required dependencies if you haven't already done so.
 
-Run `npm run exercise1` to start the client server. The app will be available on http://localhost:5000
+Run `npm run exercise-solution1` to start the client server. The app will be available on http://localhost:5000
 
 ## Subtasks
 
