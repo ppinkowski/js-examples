@@ -2,11 +2,17 @@
 
 Given a canvas control and a basic server setup, create a shared canvas, so that multiple people can simultaneously draw on the same instance.
 
-Add your solution client code to `exercise2.js`
+Add your solution client code to `exercise2.js`.
 
-## Client
+## Subtasks
 
-The canvas control can be created using `createCanvasControl('canvas');` (from global scope)
+1. Add event handlers to the buttons to set the canvas colours and shapes. Hint: look at the getElementById function.
+2. Send the commands from the canvas to the server in the draw handler function already created.
+3. When messages are received from the server in the server message handler, replicate the respective commands on the local canvas by calling the appropriate method.
+
+## Available Functions
+
+The canvas control has been created using `createCanvasControl('canvas');`
 
 This will return a canvas object that has the following methods:
 

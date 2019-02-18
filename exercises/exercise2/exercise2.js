@@ -1,11 +1,13 @@
 const canvas = createCanvasControl('canvas');
 
+// Task 1: Add event listeners for each button. (Look in index.html to see button ids)
+
 // Add a callback handler for the command draw event, simply send the command to the server
 canvas.addDrawHandler(command => {
-  // TODO: something with canvas command
+  // Task 2: do something with canvas command
 });
 
 // add a message handler for messages recieved from the server
 addServerMessageHandler(message => {
-  // TODO: something with message
+  // Task 3: do something with received server message
 });
