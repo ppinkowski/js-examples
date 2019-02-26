@@ -7,7 +7,8 @@ Add your solution client code to `exercise2.js`.
 ## Subtasks
 
 1. Add event handlers to the buttons to set the canvas colours and shapes. Hint: look at the getElementById function.
-2. Send the commands from the canvas to the server in the draw handler function already created.
+2. Send the commands from the canvas to the server in the draw handler function already created.  
+   _Hint: try logging the incoming and outgoing messages with console.log(). You can also view the websocket messages in both directions from the network tab of dev tools_
 3. When messages are received from the server in the server message handler, replicate the respective commands on the local canvas by calling the appropriate method.
 
 ## Available Functions
